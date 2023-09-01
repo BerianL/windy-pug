@@ -1,0 +1,75 @@
+.center-container.min-h-screen.flex.flex-col.justify-center.items-center.overflow-x-hidden.p-12
+    .max-w-screen-full.mx-auto
+        div(class="sm:w-auto").w-full
+        .text-center.mx-auto
+            div(data-tip="Click me!").tooltip
+                img.glass.rounded-full.w-32.mx-auto(src="/images/windypug.png", alt="Windypug")
+
+            h1.text-5xl.font-bold.pb-6 Welcome to
+                br
+                span.bg-gradient-to-r.from-primary.to-secondary.text-transparent.bg-clip-text WindyPug
+
+            p.pb-6 This project provides a foundation for web development.
+
+            div(class='md:block').mockup-code.glass.bg-opacity-0.text-left.text-xs.hidden
+                pre(data-prefix="$").text-base-content
+                    code git clone https://github.com/BerianL/windy-pug.git
+                pre(data-prefix="$").text-base-content
+                    code cd windy-pug
+                pre(data-prefix="$").text-base-content
+                    code npm install
+                pre(data-prefix="$").text-base-content
+                    code npm run dev:sync
+                pre(data-prefix=">").text-success
+                    code Happy coding!
+
+            .flex.flex-wrap.justify-center.items-stretch
+                div(class="sm:w-1/2 md:w-1/4").w-full.p-2.h-60
+                    a(href="https://expressjs.com")
+                        .btn.glass.btn-black.shadow-lg.flex.flex-col.h-full.text-accent-content.normal-case.font-normal
+                            .rounded-xl.flex.flex-col.justify-center.items-center
+                                .w-16.h-16.glass.rounded-full.bg-secondary.flex.justify-center.items-center
+                                    i.fab.fa-js.text-3xl.text-white.text-opacity-75
+                                h2.text-xl.font-bold.py-4 Express.js
+                                p.text-center.text-sm Backend
+                                    br
+                                    | framework
+                div(class="sm:w-1/2 md:w-1/4").w-full.p-2.h-60
+                    .btn.glass.btn-black.shadow-lg.flex.flex-col.h-full.text-accent-content.normal-case.font-normal
+                        a(href="https://tailwindcss.com")
+                            .rounded-xl.flex.flex-col.justify-center.items-center
+                                .w-16.h-16.glass.rounded-full.bg-primary.flex.justify-center.items-center
+                                    i.fas.fa-file-code.text-3xl.text-white.text-opacity-75
+                                h2.text-xl.font-bold.py-4 TailwindCSS
+                                p.text-center.text-sm CSS
+                                    br
+                                    | framework
+                div(class="sm:w-1/2 md:w-1/4").w-full.p-2.h-60
+                    .btn.glass.btn-black.shadow-lg.flex.flex-col.h-full.text-accent-content.normal-case.font-normal
+                        a(href="https://daisyui.com")
+                            .rounded-xl.flex.flex-col.justify-center.items-center
+                                .w-16.h-16.glass.rounded-full.bg-warning.flex.justify-center.items-center
+                                    i.fas.fa-paintbrush.text-3xl.text-black.text-opacity-25
+                                h2.text-xl.font-bold.py-4 DaisyUI
+                                p.text-center.text-sm Component
+                                    br
+                                    | library
+                div(class="sm:w-1/2 md:w-1/4").w-full.p-2.h-60
+                    .btn.glass.btn-black.shadow-lg.flex.flex-col.h-full.text-accent-content.normal-case.font-normal
+                          a(href="https://pugjs.org")
+                            .rounded-xl.flex.flex-col.justify-center.items-center
+                                .w-16.h-16.glass.rounded-full.bg-accent.flex.justify-center.items-center
+                                    i.fas.fa-code.text-3xl.text-white.text-opacity-75
+                                h2.text-xl.font-bold.py-4 Pug
+                                p.text-center.text-sm Template
+                                    br
+                                    | engine
+            p.text-sm.mx-auto.py-6(style="max-width: 80%")
+                | To get started, simply customise the
+                span.glass.bg-secondary.rounded-badge.text-secondary-content.m-1.px-2 views/index.pug
+                | file to build your web application's user interface.
+
+            button.btn.glass.btn-primary.font-normal.text-base-content
+                a(href="https://github.com/BerianL/windy-pug.git")
+                    i.fab.fa-github.text-xl
+                    |  View on GitHub
